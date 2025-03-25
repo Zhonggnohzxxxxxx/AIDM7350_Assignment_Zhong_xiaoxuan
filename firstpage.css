@@ -1,0 +1,524 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg0002, .bgimg0003 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('BG02.png');
+    position: relative;
+    min-height: 100%;
+    background-size: cover;
+    margin-top: 1%;
+    background-position: center; /* 背景图片居中 */
+    overflow: hidden;
+    width: 100%; /* 使容器宽度占满视口宽度 */
+}
+
+.bgimg-2 {
+    background-image: url("bgimg_2.jpg");
+    position: relative; /* 确保内部元素可以相对于此元素定位 */
+    width: 100%; /* 使容器宽度占满视口宽度 */
+    height: 50vh; /* 你可以根据需要调整高度 */
+    overflow: hidden; /* 防止内容溢出容器 */
+    background-size: cover; /* 背景图片覆盖整个容器，保持比例缩放 */
+    background-position: center; /* 背景图片居中 */
+}
+
+.bgimg0002 {
+    background-image: url('BG03.png');
+    position: relative;
+    min-height: 100%;
+    background-size: cover;
+    margin-top: 2.5%;
+    background-position: center; /* 背景图片居中 */
+    overflow: hidden;
+    width: 100%; /* 使容器宽度占满视口宽度 */
+}
+
+.bgimg0003 {
+    background-image: url('BG04.png');
+    position: relative;
+    min-height: 100%;
+    background-size: cover;
+    margin-top: 2.5%;
+    background-position: center; /* 背景图片居中 */
+    overflow: hidden;
+    width: 100%; /* 使容器宽度占满视口宽度 */
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg0002, .bgimg0003 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+}
+
+.owncolor_bg{
+    background-color: #1b202b;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+    display: inline-block; /* 使span成为块级元素，以便应用宽度和高度 */
+    padding: 1vw; /* 使用视口宽度单位设置内边距，确保随着屏幕缩小而缩小 */
+    border-radius: 5px; /* 可选：添加圆角 */
+    font-size: 1.7vw; /* 使用视口宽度单位设置字体大小 */
+    text-align: center; /* 文字居中 */
+}
+
+/* .sign02{
+    width: 50%;
+    margin-top: -25%;
+} */
+
+.Beyond-hidden{  /*标题隐藏*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+#likeButton{
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* 隐藏放大后的图片溢出部分 */
+}
+
+#likeButton .like-icon {
+    display: inline-block;
+    width: 30px; /* 根据你的图标大小调整 */
+    height: 30px; /* 根据你的图标大小调整 */
+    background-image: url('like.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle; /* 使图标和文本垂直对齐 */
+    margin-right: 2px; /* 图标和文本之间的间距 */
+    transition: background-image 0.5s ease-out; /* 动画效果（如果需要的话，可以移除） */
+}
+
+#likeButton.liked .like-icon {
+    background-image: url('sign02.png'); /* 替换为鱼形图标 */
+}
+
+#likeButton.liked b {
+    color: #7e322f;
+}
+
+#likeButton02{
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* 隐藏放大后的图片溢出部分 */
+}
+
+#likeButton02 .like-icon02 {
+    display: inline-block;
+    width: 30px; /* 根据你的图标大小调整 */
+    height: 30px; /* 根据你的图标大小调整 */
+    background-image: url('like.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle; /* 使图标和文本垂直对齐 */
+    margin-right: 2px; /* 图标和文本之间的间距 */
+    transition: background-image 0.5s ease-out; /* 动画效果（如果需要的话，可以移除） */
+}
+
+#likeButton02.liked .like-icon02 {
+    background-image: url('sign02.png'); /* 替换为鱼形图标 */
+}
+
+#likeButton02.liked b {
+    color: #7e322f;
+}
+
+.own-padding-16 {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    margin: auto;
+    height: auto;
+}
+
+.link_style{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link_style:hover {
+    color:#d9941f;
+}
+
+.linkimg_style:hover {
+    size: 120%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+}
+
+.part4address{
+    text-align: left;
+    margin: 0;
+    
+}
+
+#borderimg { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 180 round;
+  }
+
+.container {
+    position: relative;
+  }
+
+.footerBG02 {
+    background-image: url('Background image of the Silk Road01.JPG');
+    opacity: 0.8;
+    display: block;
+    width: 100%;
+    height: 500px;
+    transition: .3s ease;
+    backface-visibility: hidden;
+    background-size: cover;
+}
+
+
+.middle {
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .footerBG02 {
+    filter: blur(6px);
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  padding: 16px 16px;
+  text-shadow: 2px 2px 5px #382418;
+}
+@media (max-width: 600px) {
+    .text {
+      font-size: 16px; /* 在小屏幕上减小字体大小 */
+      padding: 12px 12px; /* 可选：调整内边距以适应小屏幕 */
+    }
+  }
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .text {
+    font-size: 18px; /* 在中等屏幕上调整字体大小 */
+    /* 其他调整可以放在这里 */
+  }
+}
+
+.footer_center{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0;
+    display: block;
+}
+
+.footer_center img {
+    display: block; /* 移除图片底部间隙 */
+}
+
+.footer_imgtext{
+    position: absolute;
+    font-size: 36px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* 根据图片背景选择文字颜色 */
+    text-align: center;
+    opacity: 1;
+    pointer-events: none; /* 确保文字不会干扰鼠标事件 */
+    text-shadow: 2px 2px 5px #382418;
+    margin: auto;
+}
+
+.container:hover .footer_imgtext {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.footer_link{
+    text-decoration: none;
+}
+
+.footer_link:hover{
+    color:#3e5172;
+    size: 120%;
+}
+
+.owncolor_bg02{
+    display: inline-block; /* 使span成为块级元素，以便应用宽度和高度 */
+    padding: 1vw; /* 使用视口宽度单位设置内边距，确保随着屏幕缩小而缩小 */
+    background-color: rgba(255, 255, 255, 0.7); /* 示例背景色，可调整 */
+    border-radius: 5px; /* 可选：添加圆角 */
+    font-size: 2.5vw; /* 使用视口宽度单位设置字体大小 */
+    text-align: center; /* 文字居中 */
+    color: #000; /* 文字颜色 */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+}
+
+.ownmiddle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 将内部元素居中 */
+}
+
+.photo-grid{
+    display: flex;
+    justify-content: space-around; /* 使用space-around来确保有足够的间隔 */
+    flex-wrap: wrap; /* 允许换行，但在这个例子中不会用到，因为我们只有4张图片 */
+    padding: 16px;
+    text-align: center; /* 使内容居中 */
+}
+.photo-item{
+    flex: 0 0 calc(25% - 20px); /* 四个项目，每个占25%的宽度减去间隔 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加box-shadow */
+    margin: 10px; /* 外部间隔 */
+    padding: 10px; /* 内部填充 */
+    background-color: #fff; /* 背景色，可选 */
+    border-radius: 8px; /* 圆角，可选 */
+}
+
+.photo-item img {
+    width: 100%; /* 图片宽度100% */
+    height: auto; /* 保持图片比例 */
+    border-radius: 8px 8px 0 0; /* 图片圆角，与容器匹配 */
+}
+
+.AI_Works {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+}
+
+.AI_Works:hover {
+    size: 110%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+}
+
+/* 平板或中等尺寸屏幕（600px到1024px） */
+@media (max-width: 1024px) and (min-width: 600px) {
+    .photo-item {
+        flex: 1 1 calc(50% - 20px); /* 2列布局，每列宽度为50%减去间隔 */
+    }
+}
+
+@media (max-width: 600px) {
+    .photo-item {
+        flex: 0 0 100%; /* 占满整行 */
+        margin: 10px 0; /* 上下间隔，移除左右间隔 */
+    }
+}
+
+/* 新增的CSS样式 */
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+ 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+ 
+.overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+ 
+.full-image {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.close-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.thumbnail:hover{
+    filter: grayscale(30%);
+}
+
+.ownimg_center{
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 50%;
+}
+
+
+/* ！！！！！下面是第一个read more的内容了！！！！！ */
+/* ！！！！！下面是第一个read more的内容了！！！！！ */
+/* ！！！！！下面是第一个read more的内容了！！！！！ */
+
+.own_border_orange{
+    border-color: #d9941f !important;
+}
+
+.Introduction{
+    display: flex; /* 使用 flexbox 布局 */
+    align-items: center; /* 垂直方向居中对齐 */
+    padding: 5px;
+    justify-content: center;
+}
+
+.imgpart{
+    position: relative; /* 使容器成为定位上下文 */
+    display: inline-block; /* 使容器大小适应图片 */
+    width: 60%;
+    margin: 10px;
+    margin-right: 15px;
+    right: 0;
+}
+
+.Introduction_part{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.Introduction_img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    display: block; /* 移除图片底部间隙 */
+}
+
+.Introduction:hover .Introduction_img {
+    opacity: 0.3;
+}
+
+.Introduction:hover .Introduction_part {
+    opacity: 1;
+}
+
+.Introduction_text{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #d9941f;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+}
+
+
+/* ！！！！！下面是第二个read more的内容了！！！！！ */
+/* ！！！！！下面是第二个read more的内容了！！！！！ */
+/* ！！！！！下面是第二个read more的内容了！！！！！ */
+.own_indent{
+    text-indent: 2em;
+}
+
+.half_circle01{
+    clip-path: circle(50% at right);
+    width: 17vw;
+    height: auto;
+    margin: 0 1vw; 
+}
+
+.half_circle02{
+    clip-path: circle(50% at left);
+    width: 17vw;
+    height: auto;
+    margin: 0 1vw; 
+}
+
+.ownmiddle02{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* 可以保留，但在这个场景中不是必需的 */
+    height: auto; /* 让高度根据内容自动调整 */
+    width: 100%;
+    margin: 10px;
+    margin-top: 30px;
+    box-sizing: border-box; /* 包括内边距和边框在内计算宽度和高度 */
+}
+
+.ownmiddle02 .quote_text{
+    margin-left: 0.2vw; /* 调整图片和文本之间的距离 */
+    margin-right: 0.2vw;
+}
+
+.quotetext-container{
+    width: 100%; /* 确保文本容器占据整个父容器的宽度 */
+    text-align: center; /* 文本居中 */
+}
+
+.quote_text {
+    margin: 10px 0; /* 调整文本上下的间距 */
+}
+
+/* 媒体查询，针对小于600像素的屏幕进行调整 */
+@media (max-width: 600px) {
+    .half_circle01, .half_circle02 {
+        width: 25vw; /* 减小宽度以适应小屏幕 */
+        margin: 0 1.5vw; /* 减小边距 */
+    }
+    .quote-icon {
+        font-size: 3vw; /* 根据需要调整字体大小 */
+    }
+}
+
+#borderimg02 { 
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 180 round;
+}
+
+.link_style02{
+    margin: 0;
+    padding: 0;
+}
+
+.link_style02:hover {
+    color:#d9941f;
+}
